@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta name="viewport"
+      content="width=1920" />
+<meta name="description"
+	content="The Tizen Debug App allows you to read/write the eeprom" />
+
+<title>Tizen Debug App</title>
+
+<link rel="stylesheet" type="text/css" href="style.css" />
+<script src="main.js"></script>
+</head>
+
+<body>
+    <h1>Tizen Debug App</h1>
+
+    <div class="left">
+        <h2>Operation</h2>
+        <div>
+            Get value - read the value from addr: 0x3e65<br>
+            Set default - write the default value to addr: 0x3e65<br>
+            Set global - write [0x02] value to addr: 0x3e65<br>
+            Run factory - open service menu
+        </div>
+
+        <ul class="items"></ul>
+
+        <fieldset id="logsFieldset">
+            <legend>Logs</legend>
+            <div class="logs" id="logs"></div>
+        </fieldset>
+    </div>
+
+    <div class="right">
+        <h2>Info</h2>
+        <p>This application allows you to read/write the eeprom</p>
+    </div>
+
+</body>
+</html>

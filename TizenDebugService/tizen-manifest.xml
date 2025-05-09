@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns="http://tizen.org/ns/packages" api-version="5.0" package="2pUgzM8cvD" version="1.0.0">
+  <profile name="common" />
+  <service-application appid="2pUgzM8cvD.TizenDebugService" exec="TizenDebugService.dll" type="dotnet" multiple="false" taskmanage="false" nodisplay="false" on-boot="false">
+    <label>TizenDebugService</label>
+    <icon>TizenDebugService.png</icon>
+  </service-application>
+  <app-context appid="2pUgzM8cvD.TizenDebugService">
+		<app-context-rule>
+			<source selector="key" longpress="3000">XF86Exit</source>
+			<target selector="app" request="launch">2pUgzM8cvD.TizenDebugService</target>
+		</app-context-rule>
+	</app-context>
+	<shortcut-list />
+    <privileges>
+        <privilege>http://tizen.org/privilege/appmanager.launch</privilege>
+        <privilege>http://tizen.org/privilege/messageport</privilege>
+        <privilege>http://tizen.org/privilege/notification</privilege>
+        <privilege>http://tizen.org/privilege/packagemanager.info</privilege>
+        <privilege>http://tizen.org/privilege/packagemanager.admin</privilege>
+        <privilege>http://tizen.org/privilege/systemsettings.admin</privilege>
+        <privilege>http://tizen.org/privilege/systemmonitor</privilege>
+        <privilege>http://tizen.org/privilege/network.get</privilege>
+        <privilege>http://tizen.org/privilege/keygrab</privilege>
+        <privilege>http://developer.samsung.com/privilege/was.platform</privilege>
+        <privilege>http://tizen.org/privilege/window.priority.set</privilege>
+    </privileges>
+    <dependencies />
+    <provides-appdefined-privileges />
+</manifest>
