@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns="http://tizen.org/ns/packages" api-version="5.0" package="2pUgzM8cvD" version="1.0.0">
+<manifest xmlns="http://tizen.org/ns/packages" api-version="4.0" package="2pUgzM8cvD" version="1.0.0">
   <profile name="common" />
   <service-application appid="2pUgzM8cvD.TizenDebugService" exec="TizenDebugService.dll" type="dotnet" multiple="false" taskmanage="false" nodisplay="false" on-boot="false">
     <label>TizenDebugService</label>

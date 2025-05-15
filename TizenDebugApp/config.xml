@@ -5,7 +5,7 @@
         <tizen:src name="index.html" reload="disable"/>
         <tizen:operation name="http://samsung.com/appcontrol/operation/eden_resume"/>
     </tizen:app-control>
-    <tizen:application id="2pUgzM8cvD.TizenDebugApp" package="2pUgzM8cvD" required_version="5.0"/>
+    <tizen:application id="2pUgzM8cvD.TizenDebugApp" package="2pUgzM8cvD" required_version="4.0"/>
     <content src="index.html"/>
     <feature name="http://tizen.org/feature/screen.size.all"/>
     <icon src="icon.png"/>
