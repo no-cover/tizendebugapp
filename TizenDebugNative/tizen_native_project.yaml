@@ -1,0 +1,55 @@
+# Project type [native_app, shared_lib, static_lib, test_runner]
+project_type: shared_lib
+
+# Default profile, Tizen API version
+profile: tizen
+api_version: "9.0"
+
+# Output name for compiled binary/ lib
+output_name: devmap
+
+# Build type [Debug/ Release/ Test]
+build_type: Release
+
+# Rootstrap for compiling native app
+rootstrap: public
+
+# Default compiler for native app compilation
+compiler: llvm
+
+# default arch for build, [x86/ x86_64/ arm/ aarch64]
+arch: arm
+
+# list of source files (.c, .cpp, .asm, .S etc}} and headers
+sources:
+  - inc/eepromw.h
+  - src/eepromw.cpp
+
+# preprocessor defines, passed to the C/C++ compiler with -D options
+defines:
+  - DEPRECATION_WARNING
+  - TIZEN_DEPRECATION
+  - _APP_LOG
+
+# header include directories, passed to the C/C++ compiler with -I option
+include_dirs:
+  - inc
+
+# common compilation flags, passed to both C/C++ compiler
+cflags:
+  - -Wall
+  - -fstack-protector-all
+
+# cpp compilation flags, passed to only C++ compiler
+cflags_cc:
+  - -std=c++11
+
+# list of library names or library paths to link with target
+# values containing '/' will be passed directly other wise passed with -l option
+libs:
+  - dl
+
+# additional linker flags for the target
+ldflags:
+  - -Xlinker
+  - -Ltpk/lib

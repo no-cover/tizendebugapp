@@ -24,6 +24,7 @@
         <privilege>http://tizen.org/privilege/keygrab</privilege>
         <privilege>http://developer.samsung.com/privilege/was.platform</privilege>
         <privilege>http://tizen.org/privilege/window.priority.set</privilege>
+        <privilege>http://tizen.org/privilege/appdir.shareddata</privilege>
     </privileges>
     <dependencies />
     <provides-appdefined-privileges />
