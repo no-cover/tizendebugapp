@@ -6,7 +6,7 @@ profile: tizen
 api_version: "9.0"
 
 # Output name for compiled binary/ lib
-output_name: devmap
+output_name: eeprom-map
 
 # Build type [Debug/ Release/ Test]
 build_type: Release
