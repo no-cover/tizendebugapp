@@ -10,7 +10,7 @@ build_type: Release
 
 # files monitored for dirty/modified status
 files:
-  - lib/libdevmap.so
+  - lib/libeeprom-map.so
   - TizenDebugService.cs
   - TizenDebugService.csproj
   - shared/res/TizenDebugService.png

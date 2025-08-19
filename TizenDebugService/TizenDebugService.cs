@@ -16,10 +16,10 @@ namespace TizenDebugService
 
         static class ExternalLib {
 
-            [DllImport("libdevmap.so", CallingConvention = CallingConvention.Cdecl, EntryPoint = "eeprom_read")]
+            [DllImport("libeeprom-map.so", CallingConvention = CallingConvention.Cdecl, EntryPoint = "eeprom_read")]
             public static extern int Read(uint address, uint size, byte[] buffer);
 
-            [DllImport("libdevmap.so", CallingConvention = CallingConvention.Cdecl, EntryPoint = "eeprom_write")]
+            [DllImport("libeeprom-map.so", CallingConvention = CallingConvention.Cdecl, EntryPoint = "eeprom_write")]
             public static extern int Write(uint address, int length, IntPtr buffer);
 
         }
